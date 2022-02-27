@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Sd241224
+    url: jdbc:mysql://127.0.0.1:3306/redistest?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+  redis:
+    host: localhost
+    port: 6379
+    connect-timeout: 1000
+    jedis:
+      pool:
+        min-idle: 5
+        max-idle: 10
+        max-wait: -1
+mybatis:
+  type-aliases-package: com.dong.pojo
+  mapper-locations: classpath:mapper/*.xml
+
